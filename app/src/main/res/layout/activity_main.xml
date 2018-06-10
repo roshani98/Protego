@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/danger_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:textColor="#FF0000"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <Button
+            android:id="@+id/SOS"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_round"
+            android:text="NAVIGATE" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map_fragment"
+            android:name="com.hypertrack.lib.tracking.MapProvider.HyperTrackMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <Button
+            android:id="@+id/sos"
+            android:layout_width="75dp"
+            android:layout_marginTop="500dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/round"
+            android:text="SOS" />
+
+        <Button
+            android:id="@+id/police"
+            android:layout_below="@+id/SOS"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_round"
+            android:text="POLICE STATION"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:onClick="showPolice"/>
+    </RelativeLayout>
+
+</LinearLayout>
