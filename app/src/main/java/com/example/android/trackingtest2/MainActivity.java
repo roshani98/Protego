@@ -87,6 +87,11 @@ public class MainActivity extends FragmentActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+    }
+    
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
