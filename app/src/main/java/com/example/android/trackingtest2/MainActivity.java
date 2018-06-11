@@ -262,7 +262,7 @@ public class MainActivity extends FragmentActivity {
     private void sendSmS(String message) {
         SmsManager smsManager = SmsManager.getDefault();
         try{
-            smsManager.sendTextMessage("+917486914460",null, message,null,null);
+            smsManager.sendTextMessage("+91 YOUR_PHONE_NUMBER",null, message,null,null);
         } catch (Exception e){
             Toast.makeText(this,e.getMessage(),Toast.LENGTH_LONG).show();
         }
